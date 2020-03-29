@@ -1,0 +1,252 @@
+body{
+	overflow-x: hidden;
+}
+
+.carousel-inner img {
+	width: 100%;
+	height: 400px;
+}
+
+.navbar {
+	position: fixed;
+	z-index: 9;
+	width: 100%;
+	top: 0px;
+}
+
+._wrapper {
+	margin-top: 60px;
+}
+
+section {
+	display: inline-block;
+	width: 100%;
+}
+
+._srchWrap {
+	display: inline-block;
+	width: 100%;
+}
+
+._states {
+	display: none;
+}
+
+._states._state0 {
+	display: block;
+}
+
+#section2 {
+	background: #e9ecef;
+	padding: 15px;
+}
+
+._newsWrap {
+	width: 100%;
+	display: inline-block;
+	min-height: 500px;
+	margin: 0 auto;
+	background: #fff;
+	border-radius: 5px;
+	border: 1px solid #ccc;
+	padding: 15px;
+	box-shadow: 0px 7px 6px -2px #999;
+}
+
+._heading {
+	font-size: 24px;
+	width: 100%;
+	display: inline-block;
+}
+
+._date {
+	border-radius: 3px;
+	font-size: 14px;
+	display: inline-block;
+	background: #e9ecef;
+	padding: 5px;
+	margin-top: 5px;
+}
+
+.flashit {
+	color: #fff;
+	background: #f2f;
+	font-size: 14px;
+	border-radius: 5px;
+	padding: 3px 15px;
+	margin-left: 10px;
+	vertical-align: 2px;
+	-webkit-animation: flash linear 1s infinite;
+	animation: flash linear 1s infinite;
+}
+
+@-webkit-keyframes flash {
+	0% {
+		opacity: 1;
+	}
+	50% {
+		opacity: .1;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+@keyframes flash {
+	0% {
+		opacity: 1;
+	}
+	50% {
+		opacity: .1;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+/* Pulse class and keyframe animation */
+
+.pulseit {
+	-webkit-animation: pulse linear .5s infinite;
+	animation: pulse linear .5s infinite;
+}
+
+@-webkit-keyframes pulse {
+	0% {
+		width: 200px;
+	}
+	50% {
+		width: 340px;
+	}
+	100% {
+		width: 200px;
+	}
+}
+
+@keyframes pulse {
+	0% {
+		width: 200px;
+	}
+	50% {
+		width: 340px;
+	}
+	100% {
+		width: 200px;
+	}
+}
+
+._descBar {
+	display: inline-block;
+	width: 100%;
+	margin-top: 20px;
+}
+
+._descBar ul {}
+
+._descBar ul li {}
+
+._descBar ul li span {
+	color: blue;
+	cursor: pointer;
+	font-size: 16px;
+}
+
+._descBar ul li span:hover {
+	text-decoration: underline;
+	opacity: 0.8;
+}
+
+._descBar ul li p {
+	color: #999;
+	font-size: 15px;
+	line-height: 18px;
+}
+
+#section3 .container {
+	padding: 75px 15px;
+}
+
+#section3 .container ._ventStats {
+	margin-bottom: 15px;
+}
+
+.project-tab {
+	padding: 15px;
+	margin-top: -8%;
+}
+
+.project-tab #tabs {
+	background: #007b5e;
+	color: #eee;
+}
+
+.project-tab #tabs h6.section-title {
+	color: #eee;
+}
+
+.project-tab #tabs .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
+	color: #0062cc;
+	background-color: transparent;
+	border-color: transparent transparent #f3f3f3;
+	border-bottom: 3px solid !important;
+	font-size: 16px;
+	font-weight: bold;
+}
+
+.project-tab .nav-link {
+	border: 1px solid transparent;
+	border-top-left-radius: .25rem;
+	border-top-right-radius: .25rem;
+	color: #0062cc;
+	font-size: 16px;
+	font-weight: 600;
+}
+
+.project-tab .nav-link:hover {
+	border: 1px solid transparent;
+}
+
+.project-tab thead {
+	background: #f3f3f3;
+	color: #333;
+}
+
+.project-tab a {
+	text-decoration: none;
+	color: #333;
+	font-weight: 600;
+}
+
+#section4 .tab-pane {
+	margin-top: 15px;
+}
+
+#section5 .flashit {
+	font-size: 20px;
+}
+
+#section5 .btn {
+	margin: 0px 5px;
+	;
+}
+
+#section5 {
+	padding-bottom: 30px;
+}
+
+@media(max-width:550px){
+	.text-center h1{
+		font-size: 26px;
+	}
+
+	.text-center h3{
+		font-size: 22px;
+	}
+	#section3 .container h3{
+		font-size: 22px;
+	}
+
+	#section3 .container ._srchWrap ._cenName{
+		font-size: 14px;
+	}
+}

@@ -1,0 +1,1379 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Locate Your Ventilator</title>
+	<!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">	
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.9/dist/css/bootstrap-select.min.css">
+	<link rel="stylesheet" href="css/style.css">
+  
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.9/dist/js/bootstrap-select.min.js"></script>
+
+	<!-- (Optional) Latest compiled and minified JavaScript translation files -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.9/dist/js/i18n/defaults-*.min.js"></script>
+	<script src="js/script.js"></script>  
+	
+</head>
+
+<body>
+<nav class="navbar navbar-expand-sm navbar-light bg-light">  
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav">
+      <li class="nav-item active">
+        <a class="nav-link" href="#section1">HOME</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#section2">NEWS</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#section3">CHECK STATUS</a>
+      </li>
+	  <li class="nav-item">
+        <a class="nav-link" href="#section4">COVID-19</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link disabled" href="#section5">PROCEED TO BOOKING</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+<div class="_wrapper">
+<section id="section1">
+<div id="demo" class="carousel slide" data-ride="carousel">
+  <ul class="carousel-indicators">
+    <li data-target="#demo" data-slide-to="0" class="active"></li>
+    <li data-target="#demo" data-slide-to="1"></li>
+    <li data-target="#demo" data-slide-to="2"></li>
+  </ul>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="images/1.jpg" alt="Los Angeles" width="1100" height="500">
+        
+    </div>
+    <div class="carousel-item">
+      <img src="images/6.jpg" alt="Chicago" width="1100" height="500">
+        
+    </div>
+    <div class="carousel-item">
+      <img src="images/4.jpg" alt="New York" width="1100" height="500">
+       
+    </div>
+  </div>
+  <a class="carousel-control-prev" href="#demo" data-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </a>
+  <a class="carousel-control-next" href="#demo" data-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </a>
+</div>
+</section>
+
+<section id="section2">
+<div class="_newsWrap">
+<div class="_headBar">
+<span class="_heading">Latest News Regarding COVID-19<i class="flashit">Live</i></span>
+<span class="_date">March 30 , 2020</span>
+</div>
+<div class="_descBar">
+<ul>
+<li>
+<span>Confirmed Covid-19 cases surge past 1000 as India</span>
+<p>Authorities reported seven fresh deaths on March 29, one each from Delhi, Gujarat, Karnataka, Kerala.</p>
+</li>
+<li>
+<span>Anxieties, life hacks and takeaways from India's CEOs</span>
+<p>Anxieties, life hacks and takeaways from India's CEOs who are navigating uncharted territory. An unprecedented business crisis looms.</p>
+</li>
+<li>
+<span>India turns to location surveillance to contain spread of Covid-19</span>
+<p>Police forces, Centre and state governments around the country are using location-tracking on smartphones to identify possible Covid-19 cases.</p>
+</li>
+<li>
+<span>Tata Group commits ₹1500 crore to fight Covid-19</span>
+<p>Tata Sons, the holding firm of the Tata group companies, announced an additional ₹1,000 crore support towards Covid-19 and related activities</p>
+</li>
+<li>
+<span>Infant infected with COVID-19 dies in US</span>
+<p>An infant who had tested positive for COVID-19 has died, the first known death of a child younger than a year old infected with disease.</p>
+</li>
+
+</ul>
+</div>
+</div>
+</section>
+
+<section id="section3">
+<div class="jumbotron text-center">
+  <h1>Find Ventilator</h1>
+  <h3>Select your city to check the status of Ventilators in your area.</h3> 
+</div>
+<div class="container">
+  <div class="row">
+    <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+      <h3>Select Your State</h3>
+      <select class="selectpicker _ventStats" title="Search" data-live-search="true">
+  <option>Andhra Pradesh</option>
+  <option>Andaman & Nicobar Islands</option>
+  <option>Assam</option>
+  <option>Bihar</option>
+  <option>Chandigarh</option>
+  <option>Chhattisgarh</option>
+  <option>Delhi</option>
+  <option>Gujarat</option>
+  <option>Haryana</option>
+  <option>Himachal Pradesh</option>
+  <option>Jammu & Kashmir</option>
+  <option>Jharkhand</option>
+  <option>Karnataka</option>
+  <option>Kerala</option>
+  <option>Madhya Pradesh</option>
+  <option>Meghalaya</option>
+  <option>Manipur</option>
+  <option>Maharashtra</option>
+  <option>Odisha</option>
+  <option>Puducherry</option>
+  <option>Punjab</option>
+  <option>Rajasthan</option>
+  <option>Tamil Nadu</option>
+  <option>Tripura</option>
+  <option>Telangana</option>
+  <option>Uttar Pradesh</option>
+  <option>Uttarakhand</option>
+  <option>West Bengal</option>
+</select>
+
+    </div>
+    <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8">
+      <h3>Search Results</h3>
+	  <div id="" class="_states _state0">
+	  <div class="_srchWrap">
+      <p class="_cenName">Select your state to view the availability of Ventilators. </p>
+      
+</div>	  
+	  </div>
+	  
+	  <div id="_state1" class="_states">
+	  <div class="_srchWrap">
+      <p class="_cenName">1. Sri Venkateswara Institute of Medical Sciences, Tirupati</p>
+      <table class="table">
+  <thead>
+    <tr>      
+      <th scope="col">Total</th>
+      <th scope="col">Occupied</th>
+      <th scope="col">Vacant</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>      
+      <td>25</td>
+      <td>10</td>
+      <td>15</td>
+    </tr>
+    
+  </tbody>
+</table>
+</div>
+	  <div class="_srchWrap">
+      <p class="_cenName">2. Andhra Medical College, Visakhapatnam, Andhra Pradesh</p>
+      <table class="table">
+  <thead>
+    <tr>      
+      <th scope="col">Total</th>
+      <th scope="col">Occupied</th>
+      <th scope="col">Vacant</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>      
+      <td>25</td>
+      <td>10</td>
+      <td>15</td>
+    </tr>
+    
+  </tbody>
+</table>
+	  </div>
+	  </div>
+	  
+	  <div id="_state2" class="_states">
+	  <div class="_srchWrap">
+      <p class="_cenName">1. GMC, Anantapur, AP</p>
+      <table class="table">
+  <thead>
+    <tr>      
+      <th scope="col">Total</th>
+      <th scope="col">Occupied</th>
+      <th scope="col">Vacant</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>      
+      <td>25</td>
+      <td>10</td>
+      <td>15</td>
+    </tr>
+    
+  </tbody>
+</table>
+</div>
+	  <div class="_srchWrap">
+      <p class="_cenName">2. Regional Medical Research Centre, Port Blair, Andaman and Nicobar </p>
+      <table class="table">
+  <thead>
+    <tr>      
+      <th scope="col">Total</th>
+      <th scope="col">Occupied</th>
+      <th scope="col">Vacant</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>      
+      <td>25</td>
+      <td>10</td>
+      <td>15</td>
+    </tr>
+    
+  </tbody>
+</table>
+	  </div>
+	  </div>
+	  
+	  <div id="_state3" class="_states">
+	  <div class="_srchWrap">
+      <p class="_cenName">1. Gauhati Medical College, Guwahati</p>
+      <table class="table">
+  <thead>
+    <tr>      
+      <th scope="col">Total</th>
+      <th scope="col">Occupied</th>
+      <th scope="col">Vacant</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>      
+      <td>25</td>
+      <td>10</td>
+      <td>15</td>
+    </tr>
+    
+  </tbody>
+</table>
+</div>
+	  <div class="_srchWrap">
+      <p class="_cenName">2. Regional Medical Research Center, Dibrugarh </p>
+      <table class="table">
+  <thead>
+    <tr>      
+      <th scope="col">Total</th>
+      <th scope="col">Occupied</th>
+      <th scope="col">Vacant</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>      
+      <td>25</td>
+      <td>10</td>
+      <td>15</td>
+    </tr>
+    
+  </tbody>
+</table>
+	  </div>
+	  </div>
+	  
+	  <div id="_state4" class="_states">
+	  <div class="_srchWrap">
+      <p class="_cenName">1. Rajendra Memorial Research Institute of Medical Sciences, Patna </p>
+      <table class="table">
+  <thead>
+    <tr>      
+      <th scope="col">Total</th>
+      <th scope="col">Occupied</th>
+      <th scope="col">Vacant</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>      
+      <td>25</td>
+      <td>10</td>
+      <td>15</td>
+    </tr>
+    
+  </tbody>
+</table>
+</div>	  
+	  </div>
+	  
+	  <div id="_state5" class="_states">
+	  <div class="_srchWrap">
+      <p class="_cenName">1. Post Graduate Institute of Medical Education & Research, Chandigarh  </p>
+      <table class="table">
+  <thead>
+    <tr>      
+      <th scope="col">Total</th>
+      <th scope="col">Occupied</th>
+      <th scope="col">Vacant</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>      
+      <td>25</td>
+      <td>10</td>
+      <td>15</td>
+    </tr>
+    
+  </tbody>
+</table>
+</div>	  
+	  </div>
+	  
+	  <div id="_state6" class="_states">
+	  <div class="_srchWrap">
+      <p class="_cenName">1. All India Institute Medical Sciences, Raipur  </p>
+      <table class="table">
+  <thead>
+    <tr>      
+      <th scope="col">Total</th>
+      <th scope="col">Occupied</th>
+      <th scope="col">Vacant</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>      
+      <td>25</td>
+      <td>10</td>
+      <td>15</td>
+    </tr>
+    
+  </tbody>
+</table>
+</div>	  
+	  </div>
+	  
+	  <div id="_state7" class="_states">
+	  <div class="_srchWrap">
+      <p class="_cenName">1. All India Institute Medical Sciences, Delhi  </p>
+      <table class="table">
+  <thead>
+    <tr>      
+      <th scope="col">Total</th>
+      <th scope="col">Occupied</th>
+      <th scope="col">Vacant</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>      
+      <td>25</td>
+      <td>10</td>
+      <td>15</td>
+    </tr>
+    
+  </tbody>
+</table>
+</div>
+	  <div class="_srchWrap">
+      <p class="_cenName">2. National Centre for Disease Control, Delhi </p>
+      <table class="table">
+  <thead>
+    <tr>      
+      <th scope="col">Total</th>
+      <th scope="col">Occupied</th>
+      <th scope="col">Vacant</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>      
+      <td>25</td>
+      <td>10</td>
+      <td>15</td>
+    </tr>
+    
+  </tbody>
+</table>
+	  </div>
+	  </div>
+	  
+	  <div id="_state8" class="_states">
+	  <div class="_srchWrap">
+      <p class="_cenName">1. BJ Medical College, Ahmedabad   </p>
+      <table class="table">
+  <thead>
+    <tr>      
+      <th scope="col">Total</th>
+      <th scope="col">Occupied</th>
+      <th scope="col">Vacant</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>      
+      <td>25</td>
+      <td>10</td>
+      <td>15</td>
+    </tr>
+    
+  </tbody>
+</table>
+</div>
+	  <div class="_srchWrap">
+      <p class="_cenName">2. M.P.Shah Government Medical College, Jamnagar </p>
+      <table class="table">
+  <thead>
+    <tr>      
+      <th scope="col">Total</th>
+      <th scope="col">Occupied</th>
+      <th scope="col">Vacant</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>      
+      <td>25</td>
+      <td>10</td>
+      <td>15</td>
+    </tr>
+    
+  </tbody>
+</table>
+	  </div>
+	  </div>
+	  
+	  <div id="_state9" class="_states">
+	  <div class="_srchWrap">
+      <p class="_cenName">1. Pt. B.D. Sharma Post Graduate Inst. of Med. Sciences, Rohtak, Haryana    </p>
+      <table class="table">
+  <thead>
+    <tr>      
+      <th scope="col">Total</th>
+      <th scope="col">Occupied</th>
+      <th scope="col">Vacant</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>      
+      <td>25</td>
+      <td>10</td>
+      <td>15</td>
+    </tr>
+    
+  </tbody>
+</table>
+</div>
+	  <div class="_srchWrap">
+      <p class="_cenName">2. BPS Govt Medical College, Sonipat </p>
+      <table class="table">
+  <thead>
+    <tr>      
+      <th scope="col">Total</th>
+      <th scope="col">Occupied</th>
+      <th scope="col">Vacant</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>      
+      <td>25</td>
+      <td>10</td>
+      <td>15</td>
+    </tr>
+    
+  </tbody>
+</table>
+	  </div>
+	  </div>
+	  
+	  <div id="_state10" class="_states">
+	  <div class="_srchWrap">
+      <p class="_cenName">1. Indira Gandhi Medical College, Shimla, Himachal Pradesh     </p>
+      <table class="table">
+  <thead>
+    <tr>      
+      <th scope="col">Total</th>
+      <th scope="col">Occupied</th>
+      <th scope="col">Vacant</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>      
+      <td>25</td>
+      <td>10</td>
+      <td>15</td>
+    </tr>
+    
+  </tbody>
+</table>
+</div>
+	  <div class="_srchWrap">
+      <p class="_cenName">2. Dr.Rajendra Prasad Govt. Med. College, Kangra, Tanda, HP </p>
+      <table class="table">
+  <thead>
+    <tr>      
+      <th scope="col">Total</th>
+      <th scope="col">Occupied</th>
+      <th scope="col">Vacant</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>      
+      <td>25</td>
+      <td>10</td>
+      <td>15</td>
+    </tr>
+    
+  </tbody>
+</table>
+	  </div>
+	  </div>
+	  
+	  <div id="_state11" class="_states">
+	  <div class="_srchWrap">
+      <p class="_cenName">1. Sher-e- Kashmir Institute of Medical Sciences, Srinagar      </p>
+      <table class="table">
+  <thead>
+    <tr>      
+      <th scope="col">Total</th>
+      <th scope="col">Occupied</th>
+      <th scope="col">Vacant</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>      
+      <td>25</td>
+      <td>10</td>
+      <td>15</td>
+    </tr>
+    
+  </tbody>
+</table>
+</div>
+	  <div class="_srchWrap">
+      <p class="_cenName">2. Government Medical College, Jammu </p>
+      <table class="table">
+  <thead>
+    <tr>      
+      <th scope="col">Total</th>
+      <th scope="col">Occupied</th>
+      <th scope="col">Vacant</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>      
+      <td>25</td>
+      <td>10</td>
+      <td>15</td>
+    </tr>
+    
+  </tbody>
+</table>
+	  </div>
+	  </div>
+	  
+	  <div id="_state12" class="_states">
+	  <div class="_srchWrap">
+      <p class="_cenName">1. MGM Medical College, Jamshedpur  </p>
+      <table class="table">
+  <thead>
+    <tr>      
+      <th scope="col">Total</th>
+      <th scope="col">Occupied</th>
+      <th scope="col">Vacant</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>      
+      <td>25</td>
+      <td>10</td>
+      <td>15</td>
+    </tr>
+    
+  </tbody>
+</table>
+</div>	  
+	  </div>
+	  
+	  <div id="_state13" class="_states">
+	  <div class="_srchWrap">
+      <p class="_cenName">1. Bangalore Medical College & Research Institute, Bangalore       </p>
+      <table class="table">
+  <thead>
+    <tr>      
+      <th scope="col">Total</th>
+      <th scope="col">Occupied</th>
+      <th scope="col">Vacant</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>      
+      <td>25</td>
+      <td>10</td>
+      <td>15</td>
+    </tr>
+    
+  </tbody>
+</table>
+</div>
+	  <div class="_srchWrap">
+      <p class="_cenName">2. National Institute of Virology Field Unit, Bangalore  </p>
+      <table class="table">
+  <thead>
+    <tr>      
+      <th scope="col">Total</th>
+      <th scope="col">Occupied</th>
+      <th scope="col">Vacant</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>      
+      <td>25</td>
+      <td>10</td>
+      <td>15</td>
+    </tr>
+    
+  </tbody>
+</table>
+	  </div>
+	  <div class="_srchWrap">
+      <p class="_cenName">3. Mysore Medical College & Research Institute, Mysore       </p>
+      <table class="table">
+  <thead>
+    <tr>      
+      <th scope="col">Total</th>
+      <th scope="col">Occupied</th>
+      <th scope="col">Vacant</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>      
+      <td>25</td>
+      <td>10</td>
+      <td>15</td>
+    </tr>
+    
+  </tbody>
+</table>
+</div>
+	  <div class="_srchWrap">
+      <p class="_cenName">4. Hassan Inst. of Med. Sciences, Hassan, Karnataka  </p>
+      <table class="table">
+  <thead>
+    <tr>      
+      <th scope="col">Total</th>
+      <th scope="col">Occupied</th>
+      <th scope="col">Vacant</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>      
+      <td>25</td>
+      <td>10</td>
+      <td>15</td>
+    </tr>
+    
+  </tbody>
+</table>
+	  </div>
+	  <div class="_srchWrap">
+      <p class="_cenName">5. Shimoga Inst. of Med. Sciences, Shivamogga, Karnataka   </p>
+      <table class="table">
+  <thead>
+    <tr>      
+      <th scope="col">Total</th>
+      <th scope="col">Occupied</th>
+      <th scope="col">Vacant</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>      
+      <td>25</td>
+      <td>10</td>
+      <td>15</td>
+    </tr>
+    
+  </tbody>
+</table>
+	  </div>
+	  </div>
+	  
+	  <div id="_state14" class="_states">
+	  <div class="_srchWrap">
+      <p class="_cenName">1. National Institute of Virology Field Unit, Kerala   </p>
+      <table class="table">
+  <thead>
+    <tr>      
+      <th scope="col">Total</th>
+      <th scope="col">Occupied</th>
+      <th scope="col">Vacant</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>      
+      <td>25</td>
+      <td>10</td>
+      <td>15</td>
+    </tr>
+    
+  </tbody>
+</table>
+</div>
+	  <div class="_srchWrap">
+      <p class="_cenName">2. Govt. Medical College, Thriuvananthapuram, Kerala   </p>
+      <table class="table">
+  <thead>
+    <tr>      
+      <th scope="col">Total</th>
+      <th scope="col">Occupied</th>
+      <th scope="col">Vacant</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>      
+      <td>25</td>
+      <td>10</td>
+      <td>15</td>
+    </tr>
+    
+  </tbody>
+</table>
+	  </div>
+	  <div class="_srchWrap">
+      <p class="_cenName">3. Govt. Medical College, Kozhikhode, Kerala   </p>
+      <table class="table">
+  <thead>
+    <tr>      
+      <th scope="col">Total</th>
+      <th scope="col">Occupied</th>
+      <th scope="col">Vacant</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>      
+      <td>25</td>
+      <td>10</td>
+      <td>15</td>
+    </tr>
+    
+  </tbody>
+</table>
+	  </div>
+	  </div>
+	  
+	  <div id="_state15" class="_states">
+	  <div class="_srchWrap">
+      <p class="_cenName">1. All India Institute Medical Sciences, Bhopal   </p>
+      <table class="table">
+  <thead>
+    <tr>      
+      <th scope="col">Total</th>
+      <th scope="col">Occupied</th>
+      <th scope="col">Vacant</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>      
+      <td>25</td>
+      <td>10</td>
+      <td>15</td>
+    </tr>
+    
+  </tbody>
+</table>
+</div>
+	  <div class="_srchWrap">
+      <p class="_cenName">2. National Institute of Research in Tribal Health (NIRTH), Jabalpur    </p>
+      <table class="table">
+  <thead>
+    <tr>      
+      <th scope="col">Total</th>
+      <th scope="col">Occupied</th>
+      <th scope="col">Vacant</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>      
+      <td>25</td>
+      <td>10</td>
+      <td>15</td>
+    </tr>
+    
+  </tbody>
+</table>
+	  </div>
+	  </div>
+	  
+	  <div id="_state16" class="_states">
+	  <div class="_srchWrap">
+      <p class="_cenName">1. NEIGRI of Health and Medical Sciences, Shillong, Meghalaya  </p>
+      <table class="table">
+  <thead>
+    <tr>      
+      <th scope="col">Total</th>
+      <th scope="col">Occupied</th>
+      <th scope="col">Vacant</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>      
+      <td>25</td>
+      <td>10</td>
+      <td>15</td>
+    </tr>
+    
+  </tbody>
+</table>
+</div>	  
+	  </div>
+	  
+	  <div id="_state17" class="_states">
+	  <div class="_srchWrap">
+      <p class="_cenName">1. Indira Gandhi Government Medical College, Nagpur    </p>
+      <table class="table">
+  <thead>
+    <tr>      
+      <th scope="col">Total</th>
+      <th scope="col">Occupied</th>
+      <th scope="col">Vacant</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>      
+      <td>25</td>
+      <td>10</td>
+      <td>15</td>
+    </tr>
+    
+  </tbody>
+</table>
+</div>
+	  <div class="_srchWrap">
+      <p class="_cenName">2. Kasturba Hospital for Infectious Diseases, Mumbai    </p>
+      <table class="table">
+  <thead>
+    <tr>      
+      <th scope="col">Total</th>
+      <th scope="col">Occupied</th>
+      <th scope="col">Vacant</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>      
+      <td>25</td>
+      <td>10</td>
+      <td>15</td>
+    </tr>
+    
+  </tbody>
+</table>
+	  </div>
+	  </div>
+	  
+	  <div id="_state18" class="_states">
+	  <div class="_srchWrap">
+      <p class="_cenName">1. J N Inst. of Med. Sciences Hospital, Imphal-East, Manipur  </p>
+      <table class="table">
+  <thead>
+    <tr>      
+      <th scope="col">Total</th>
+      <th scope="col">Occupied</th>
+      <th scope="col">Vacant</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>      
+      <td>25</td>
+      <td>10</td>
+      <td>15</td>
+    </tr>
+    
+  </tbody>
+</table>
+</div>	  
+	  </div>
+	  
+	  <div id="_state19" class="_states">
+	  <div class="_srchWrap">
+      <p class="_cenName">1. Regional Medical Research Center, Bhubaneswar   </p>
+      <table class="table">
+  <thead>
+    <tr>      
+      <th scope="col">Total</th>
+      <th scope="col">Occupied</th>
+      <th scope="col">Vacant</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>      
+      <td>25</td>
+      <td>10</td>
+      <td>15</td>
+    </tr>
+    
+  </tbody>
+</table>
+</div>	  
+	  </div>
+	  
+	  <div id="_state20" class="_states">
+	  <div class="_srchWrap">
+      <p class="_cenName">1. Jawaharlal Institute of Postgraduate Medical Education & Research, Puducherry    </p>
+      <table class="table">
+  <thead>
+    <tr>      
+      <th scope="col">Total</th>
+      <th scope="col">Occupied</th>
+      <th scope="col">Vacant</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>      
+      <td>25</td>
+      <td>10</td>
+      <td>15</td>
+    </tr>
+    
+  </tbody>
+</table>
+</div>	  
+	  </div>
+	  
+	  <div id="_state21" class="_states">
+	  <div class="_srchWrap">
+      <p class="_cenName">1. Government Medical College, Patiala, Punjab     </p>
+      <table class="table">
+  <thead>
+    <tr>      
+      <th scope="col">Total</th>
+      <th scope="col">Occupied</th>
+      <th scope="col">Vacant</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>      
+      <td>25</td>
+      <td>10</td>
+      <td>15</td>
+    </tr>
+    
+  </tbody>
+</table>
+</div>
+	  <div class="_srchWrap">
+      <p class="_cenName">2. Government Medical College, Amritsar    </p>
+      <table class="table">
+  <thead>
+    <tr>      
+      <th scope="col">Total</th>
+      <th scope="col">Occupied</th>
+      <th scope="col">Vacant</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>      
+      <td>25</td>
+      <td>10</td>
+      <td>15</td>
+    </tr>
+    
+  </tbody>
+</table>
+	  </div>
+	  </div>
+	  
+	  <div id="_state22" class="_states">
+	  <div class="_srchWrap">
+      <p class="_cenName">1. Sawai Man Singh, Jaipur     </p>
+      <table class="table">
+  <thead>
+    <tr>      
+      <th scope="col">Total</th>
+      <th scope="col">Occupied</th>
+      <th scope="col">Vacant</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>      
+      <td>25</td>
+      <td>10</td>
+      <td>15</td>
+    </tr>
+    
+  </tbody>
+</table>
+</div>
+	  <div class="_srchWrap">
+      <p class="_cenName">2. Dr. S.N Medical College, Jodhpur    </p>
+      <table class="table">
+  <thead>
+    <tr>      
+      <th scope="col">Total</th>
+      <th scope="col">Occupied</th>
+      <th scope="col">Vacant</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>      
+      <td>25</td>
+      <td>10</td>
+      <td>15</td>
+    </tr>
+    
+  </tbody>
+</table>
+	  </div>
+	  <div class="_srchWrap">
+      <p class="_cenName">3. Jhalawar Medical College, Jhalawar, Rajasthan    </p>
+      <table class="table">
+  <thead>
+    <tr>      
+      <th scope="col">Total</th>
+      <th scope="col">Occupied</th>
+      <th scope="col">Vacant</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>      
+      <td>25</td>
+      <td>10</td>
+      <td>15</td>
+    </tr>
+    
+  </tbody>
+</table>
+	  </div>
+	  <div class="_srchWrap">
+      <p class="_cenName">4. SP Med. College, Bikaner, Rajasthan    </p>
+      <table class="table">
+  <thead>
+    <tr>      
+      <th scope="col">Total</th>
+      <th scope="col">Occupied</th>
+      <th scope="col">Vacant</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>      
+      <td>25</td>
+      <td>10</td>
+      <td>15</td>
+    </tr>
+    
+  </tbody>
+</table>
+	  </div>
+	  </div>
+	  
+	  <div id="_state23" class="_states">
+	  <div class="_srchWrap">
+      <p class="_cenName">1. King's Institute of Preventive Medicine & Research, Chennai    </p>
+      <table class="table">
+  <thead>
+    <tr>      
+      <th scope="col">Total</th>
+      <th scope="col">Occupied</th>
+      <th scope="col">Vacant</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>      
+      <td>25</td>
+      <td>10</td>
+      <td>15</td>
+    </tr>
+    
+  </tbody>
+</table>
+</div>
+	  <div class="_srchWrap">
+      <p class="_cenName">2. Government Medical College, Theni   </p>
+      <table class="table">
+  <thead>
+    <tr>      
+      <th scope="col">Total</th>
+      <th scope="col">Occupied</th>
+      <th scope="col">Vacant</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>      
+      <td>25</td>
+      <td>10</td>
+      <td>15</td>
+    </tr>
+    
+  </tbody>
+</table>
+	  </div>
+	  </div>
+	  
+	  <div id="_state24" class="_states">
+	  <div class="_srchWrap">
+      <p class="_cenName">1. Government Medical College, Agartala   </p>
+      <table class="table">
+  <thead>
+    <tr>      
+      <th scope="col">Total</th>
+      <th scope="col">Occupied</th>
+      <th scope="col">Vacant</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>      
+      <td>25</td>
+      <td>10</td>
+      <td>15</td>
+    </tr>
+    
+  </tbody>
+</table>
+</div>	  
+	  </div>
+	  
+	  <div id="_state25" class="_states">
+	  <div class="_srchWrap">
+      <p class="_cenName">1. Gandhi Medical College, Secunderabad    </p>
+      <table class="table">
+  <thead>
+    <tr>      
+      <th scope="col">Total</th>
+      <th scope="col">Occupied</th>
+      <th scope="col">Vacant</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>      
+      <td>25</td>
+      <td>10</td>
+      <td>15</td>
+    </tr>
+    
+  </tbody>
+</table>
+</div>	  
+	  </div>
+	  
+	  <div id="_state26" class="_states">
+	  <div class="_srchWrap">
+      <p class="_cenName">1. King's George Medical University, Lucknow    </p>
+      <table class="table">
+  <thead>
+    <tr>      
+      <th scope="col">Total</th>
+      <th scope="col">Occupied</th>
+      <th scope="col">Vacant</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>      
+      <td>25</td>
+      <td>10</td>
+      <td>15</td>
+    </tr>
+    
+  </tbody>
+</table>
+</div>
+	  <div class="_srchWrap">
+      <p class="_cenName">2. Institute of Medical Sciences, Banaras Hindu University, Varanasi    </p>
+      <table class="table">
+  <thead>
+    <tr>      
+      <th scope="col">Total</th>
+      <th scope="col">Occupied</th>
+      <th scope="col">Vacant</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>      
+      <td>25</td>
+      <td>10</td>
+      <td>15</td>
+    </tr>
+    
+  </tbody>
+</table>
+	  </div>
+	  <div class="_srchWrap">
+      <p class="_cenName">3. Jawaharlal Nehru Medical College, Aligarh    </p>
+      <table class="table">
+  <thead>
+    <tr>      
+      <th scope="col">Total</th>
+      <th scope="col">Occupied</th>
+      <th scope="col">Vacant</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>      
+      <td>25</td>
+      <td>10</td>
+      <td>15</td>
+    </tr>
+    
+  </tbody>
+</table>
+	  </div>
+	  </div>
+	  
+	  <div id="_state27" class="_states">
+	  <div class="_srchWrap">
+      <p class="_cenName">1. Government Medical College, Haldwani     </p>
+      <table class="table">
+  <thead>
+    <tr>      
+      <th scope="col">Total</th>
+      <th scope="col">Occupied</th>
+      <th scope="col">Vacant</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>      
+      <td>25</td>
+      <td>10</td>
+      <td>15</td>
+    </tr>
+    
+  </tbody>
+</table>
+</div>	  
+	  </div>
+	  
+	  <div id="_state28" class="_states">
+	  <div class="_srchWrap">
+      <p class="_cenName">1. National Institute of Cholera and Enteric Diseases, Kolkata  </p>
+      <table class="table">
+  <thead>
+    <tr>      
+      <th scope="col">Total</th>
+      <th scope="col">Occupied</th>
+      <th scope="col">Vacant</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>      
+      <td>25</td>
+      <td>10</td>
+      <td>15</td>
+    </tr>
+    
+  </tbody>
+</table>
+</div>
+	  <div class="_srchWrap">
+      <p class="_cenName">2. IPGMER, Kolkata</p>
+      <table class="table">
+  <thead>
+    <tr>      
+      <th scope="col">Total</th>
+      <th scope="col">Occupied</th>
+      <th scope="col">Vacant</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>      
+      <td>25</td>
+      <td>10</td>
+      <td>15</td>
+    </tr>
+    
+  </tbody>
+</table>
+	  </div>
+	  </div>
+	  
+	  
+
+	  
+    </div>
+    
+  </div>
+</div>
+</section>
+
+<section id="section4">
+<div class="jumbotron text-center">
+  <h1>COVID-19</h1>
+  <h3>All about CORONA</h3> 
+</div>
+<div class="container">
+<section id="tabs" class="project-tab">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <nav>
+                            <div class="nav nav-tabs nav-fill" id="nav-tab" role="tablist">
+                                <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true">Overview</a>
+                                <a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false">Prevention</a>
+                                <a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-contact" role="tab" aria-controls="nav-contact" aria-selected="false">Symptoms</a>
+                            </div>
+                        </nav>
+                        <div class="tab-content" id="nav-tabContent">
+                            <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+                                <p>Coronavirus disease (COVID-19) is an infectious disease caused by a newly discovered coronavirus.<o:p></o:p><br></p>
+								<p>Most people infected with the COVID-19 virus will experience mild to moderate respiratory illness and recover without 
+								requiring special treatment.&nbsp; Older people, and those with underlying medical problems like cardiovascular disease, 
+								diabetes, chronic respiratory disease, and cancer are more likely to develop serious illness.<o:p></o:p><br></p>
+								<p>The best way to prevent and slow down transmission is be well informed about the COVID-19 virus, the disease
+								it causes and how it spreads. Protect yourself and others from infection by washing your hands or using an alcohol 
+								based rub frequently and not touching your face.&nbsp; </p>
+								<p>The COVID-19 virus spreads primarily through droplets of	saliva or discharge from the nose when an infected person coughs or sneezes, so it’s important that you also practice respiratory etiquette (for example, by coughing into a flexed elbow).</p>
+								<p><o:p>At this time, there are no specific vaccines or treatments for COVID-19. However, there are many ongoing clinical trials evaluating potential treatments. WHO will continue to provide updated information as soon as clinical findings become available.</o:p><br></p><p>Stay informed:<br></p><ul><li><strong><a href="/emergencies/diseases/novel-coronavirus-2019/advice-for-public">Protect yourself: advice for the public</a> </strong><br></li><li><strong><a href="https://www.who.int/news-room/q-a-detail/q-a-coronaviruses">Myth busters</a></strong><br></li><li><strong><a href="https://www.who.int/news-room/q-a-detail/q-a-coronaviruses">Questions and answers</a></strong><br></li><li><strong><a href="/emergencies/diseases/novel-coronavirus-2019/situation-reports">Situation reports</a></strong><br></li><li><strong><a href="/emergencies/diseases/novel-coronavirus-2019"><strong>All information on the COVID-19 outbreak</strong></a></strong><br></li></ul><br><p>&nbsp;</p>
+                            </div>
+                            <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+                                 <p>To prevent infection and to slow transmission of COVID-19, do the following:</p>
+								<ul><li>Wash your hands regularly with soap and water, or clean them with alcohol-based hand rub.<br></li>
+								<li>Maintain at least 1 metre distance between you and people coughing or sneezing.<br></li>
+								<li>Avoid touching your face.<br></li>
+								<li>Cover your mouth and nose when coughing or sneezing.<br></li>
+								<li>Stay home if you feel unwell.<br></li>
+								<li>Refrain from smoking and other activities that weaken the lungs.<br></li>
+								<li>Practice physical distancing by avoiding unnecessary travel and staying away from large groups of people.<br><br></li></ul>
+                            </div>
+                            <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
+                                <p>The COVID-19 virus affects different people in different ways.&nbsp; COVID-19 is a respiratory disease and most infected people will develop mild to moderate symptoms and recover without requiring special treatment.&nbsp; People who have underlying medical conditions and those over 60 years old have a higher risk of developing severe disease and death.</p><p>Common symptoms include:</p>
+								<ul>
+								<li>fever</li>
+								 <li>tiredness </li>
+								 <li>dry cough.</li>
+								 </ul>
+								 <p>Other symptoms include:</p>
+								 <ul><li>shortness of breath</li>
+								 <li>aches and pains</li>
+								 <li>sore throat</li>
+								 <li>and very few people will report diarrhoea, nausea or a runny nose.</li>
+								 </ul>
+								 <p>People with mild symptoms who are otherwise healthy should self-isolate and contact their medical provider or a COVID-19 information line for advice on testing and referral.</p>
+								 <p>People with fever, cough or difficulty breathing should call their doctor and seek medical attention.</p>
+								 <p>&nbsp;</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+</div>
+</section>
+
+<section id="section5">
+<div class="jumbotron text-center">
+  <h1>Registration & Booking</h1>
+  <h4>**Under this section , you can register your hospitals having ventilator facility as well as users can book their ventilators.</h4> 
+</div>
+<div class="container text-center">
+<marquee width="100%" direction="left" height="40px">
+<i class="flashit">This section is under Development. We regret the inconvenience caused.</i>
+</marquee>
+<a href="#" class="btn btn-light">Register Hospital</a>
+<a href="#" class="btn btn-light">Book Ventilator</a>
+</div>
+</section>
+
+</div>
+</body>
+</html>
